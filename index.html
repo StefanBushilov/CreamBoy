@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт наJavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">МойСайт</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О нас</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Добро пожаловать на наш сайт</h1>
+                <p>Создано с помощью JavaScript</p>
+                <button id="cta-button" class="cta-button">Узнать больше</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>О нас</h2>
+                <div class="about-content">
+                    <p>Мы создаем современные веб-сайты с использованием современных технологий.</p>
+                    <div class="features">
+                        <div class="feature-card">
+                            <h3>JavaScript</h3>
+                            <p>Интерактивность и динамическое содержимое</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>HTML5</h3>
+                            <p>Семантическая разметка</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>CSS3</h3>
+                            <p>Современные стили и анимации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Веб-разработка</h3>
+                        <p>Создание современных веб-приложений</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Дизайн</h3>
+                        <p>Креативный и пользовательский дизайн</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Консультации</h3>
+                        <p>Профессиональные консультации по разработке</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 МойСайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
